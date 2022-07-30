@@ -1,15 +1,20 @@
 {
+    "plugins": [
+      "prettier",
+      "unicorn"
+    ],
+    "extends": [
+      "airbnb-base",
+      "plugin:unicorn/recommended",
+      "plugin:prettier/recommended",
+      "prettier",
+      "prettier/unicorn"
+    ],
     "env": {
-      "es6": true
+      "es6": true,
+      "browser": true
     },
     "rules": {
-      "no-var": "error",
-      "semi": "error",
-      "indent": "error",
-      "no-multi-spaces": "error",
-      "space-in-parens": "error",
-      "no-multiple-empty-lines": "error",
-      "prefer-const": "error",
-      "no-use-before-define": "error"
+      "unicorn/prevent-abbreviations": "off"
     }
-}
+  }
